@@ -1,10 +1,8 @@
 package com.searching;
 
+// Floor Number Problem: If target not found then return the closest smaller number
 
-// Ceiling Number Problem: if target element not found then return the closest highest number
-
-
-public class BinarySearchCeilingOfNumber {
+public class BinarySearchFloorOfNumber {
 
     static int binarySearch(int[] arr, int target) {
 
@@ -24,16 +22,17 @@ public class BinarySearchCeilingOfNumber {
             }
         }
 
-        return start;
+        return end;
     }
 
     public static void main(String[] args) {
 
         int[]  arr = {-20, -19, -12, -4, -1, 0 , 3, 5, 11, 19, 20};
-        int target = 10;
+        int target = 13;
 
         int index = binarySearch(arr, target);
 
         System.out.print(arr[index]);
+
     }
 }
