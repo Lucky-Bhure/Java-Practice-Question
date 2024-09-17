@@ -28,7 +28,7 @@ public class BinarySearchFloorOfNumber {
     public static void main(String[] args) {
 
         int[]  arr = {-20, -19, -12, -4, -1, 0 , 3, 5, 11, 19, 20};
-        int target = 13;
+        int target = 20;
 
         int index = binarySearch(arr, target);
 
